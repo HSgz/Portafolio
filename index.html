@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hola, te presento mi portafolio, donde podrás conocer un poco de mis proyectos al igual que ponerte en contacto si quieres trabajar conmigo.">
+    <meta name="author" content="Henry Gomez"/>
+    <meta property="og:title" content="Programador web - Henry Gomez" />
+    <meta property="og:description" content="Hola, te presento mi portafolio, donde podrás conocer un poco de mis proyectos al igual que ponerte en contacto si quieres trabajar conmigo."/>
+    <meta property="og:image" content="/programming.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nomalize.css">
+    <title>HSgz</title>
+  </head>
+  <body>
+    <header>
+      <section class="section__hero" id="inicio">
+        <div class="hero__texts">
+          <h1 class="hero__title">Henry Gómez</h1>
+          <p class="hero__paragraph">Desarrollador web</p>
+
+          <a href="#about" class="hero__link">
+            <img
+              src="/public/arrow.svg"
+              alt="flecha hacia abajo"
+              class="hero__icon"
+              />
+          </a>
+        </div>
+        <figure class="hero__picture">
+          <img src="/public/programming.svg" alt="encoding" class="hero__img"/>
+        </figure>
+       
+      </section>
+      <div class="wave wave__header--bottom"></div>
+    </header>
+    <main>
+      <section class="about__container container" id="about">
+        <div class="about__texts">
+          <h2 class="about__title">Acerca de mí</h2>
+          <p class="about__paragraph">
+            Hola me llamo Henry, soy desarrollador web full stack con experiencia en JavaScript. Si quieres conocer un poco de mis proyectos en la siguiente sección te muestro algunos, aunque te dejo el enlace a mi perfil de <a class="about__link" href="https://github.com/HSgz" target="_blank">GitHub</a>.<br/>
+            Si quieres trabajar conmigo al final de la página he dejado un formulario de contacto.
+          </p>
+        </div>
+        <figure class="about__picture">
+          <img
+            src="/undraw_static.svg"
+            alt="programador html y css, presentando pagina web statica"
+            class="about__img"
+            />
+        </figure>
+      </section>
+      
+      
+      <section class="proyect__container" id="proyect">
+        <div class="wave wave__proyect--top"></div>
+        <div class="proyect__texts">
+          <h2 class="proyect__title">Algunos de mis proyectos</h2>
+        </div>
+        <div class="proyect__cards">
+  
+          <div class="proyect__card">
+            <h3 class="card__title">Pokemon list</h3>
+            <img src="/public/pokemonList.png" alt="aplicacion de lista de
+              pokemones" class="card__img">
+            <a href="https://pokemons-list.vercel.app" target="_blank"
+              class="card__button">Visitar</a>
+          </div>
+
+          <div class="proyect__card">
+            <h3 class="card__title">Favorite dogs</h3>
+            <img src="/public/dogstyle.png" alt="pagina web de perros favoritos"
+              class="card__img">
+            <a href="https://favoritedogs.netlify.app/" target="_blank"
+              class="card__button">Visitar</a>
+          </div>
+
+          <div class="proyect__card">
+            <h3 class="card__title">Game of thrones</h3>
+            <img src="/public/gameOfT.png" alt="pagina web de game of thrones"
+              class="card__img">
+            <a href="https://game-of-thrones-rho.vercel.app/" target="_blank"
+              class="card__button">Visitar</a>
+          </div>
+
+          <div class="proyect__card">
+            <h3 class="card__title">Rincón del saber</h3>
+            <img src="/public/rinconDelSaber.png" alt="pagina web de el rincón del saber"
+              class="card__img">
+            <a href="https://elrincondelsaber.netlify.app/" target="_blank"
+              class="card__button">Visitar</a>
+          </div>
+
+        </div>
+        
+      </section>
+      <div class="wave__contact--top"></div>
+      <section class="container contact__container" id="contact">
+        
+        <div class="proyect__texts">
+          <h2 class="contact__title">Contacto</h2>
+        </div>
+        <form class="form" netlify>
+          <section class="form__register">
+            <p class="form__paragraph">¿Quieres trabajar conmigo?</p>
+            <div class="form__inputs">
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder=" " name="nombre" id="fullname" required>
+                <label for="fullname" class="form__label">Nombre:</label>
+                <span class="form__bar"></span>
+              </div>
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder=" " name="email" id="email" required>
+                <label for="email" class="form__label">Email:</label>
+                <span class="form__bar"></span>
+              </div>
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="
+                  " name="mensaje" id="message" required>
+                <label for="message" class="form__label">Mensaje:</label>
+                <span class="form__bar"></span>
+              </div>
+
+              <input type="submit" class="input__submit"
+                value="Enviar" id="btnSubmit">
+            </div>
+          </section>
+          <figure class="form__picture"></figure>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__links">
+        <a class="footer__link" href="#inicio">Inicio</a>
+        <a class="footer__link" href="#about">Acerca de mi</a>
+        <a class="footer__link" href="#proyect">Proyectos</a>
+        <a class="footer__link" href="#contact">Contacto</a>
+      </div>
+      <div>
+        <div class="footer__icons">
+          <a href="https://twitter.com/Henrydgs_" aria-label="enlace a twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="#e3e3e3" class="footer__icon"><path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609
+                1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127
+                1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515
+                2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29
+                2.213-.669 5.108 1.523
+                6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415
+                3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379
+                4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768
+                2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695
+                1.797-1.562 2.457-2.549z"></path></svg></a>
+          <a href="https://github.com/HSgz" aria-label="enlace a github"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="#e3e3e3" class="text-xl hover:text-gray-800
+              dark:hover:text-white transition-colors duration-200" viewBox="0 0
+              1792 1792">
+              <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0
+                251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3
+                .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105
+                20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38
+                24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45
+                113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39
+                102.5 18q-39 36-49 103-21 10-45 15t-57
+                5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29
+                4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44
+                61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13
+                30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209
+                103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3
+                7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16
+                3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42
+                42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57
+                25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16
+                11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8
+                14-14z">
+              </path>
+            </svg></a>
+          <a href="https://www.linkedin.com/in/henry-gomez-8341721a6" aria-label="enlace a linkedin"><svg width="20" height="20" fill="#e3e3e3" class="text-xl
+              hover:text-gray-800 dark:hover:text-white transition-colors
+              duration-200" viewBox="0 0 1792 1792"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5
+                49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5
+                51 122.5zm1166
+                729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5
+                34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399
+                2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5
+                114.5-15.5q171 0 275 113.5t104 332.5z">
+              </path>
+            </svg></a>
+        </div>
+      </div>
+      <div>
+        <p>Creado por Henry Gómez</p>
+      </div>
+    </footer>
+  </body>
+</html>
